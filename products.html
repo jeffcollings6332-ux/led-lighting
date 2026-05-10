@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LuxeLite | Premium Lighting Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* custom smooth scroll for image galleries */
+        .scroll-hide {
+            scrollbar-width: thin;
+        }
+        .scroll-hide::-webkit-scrollbar {
+            height: 4px;
+        }
+        .scroll-hide::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .scroll-hide::-webkit-scrollbar-thumb {
+            background: #eab308;
+            border-radius: 10px;
+        }
+        .transition-fast {
+            transition: all 0.2s ease;
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800">
+
+<!-- Sticky Navigation -->
+<nav class="bg-white/90 backdrop-blur-md shadow-md fixed w-full z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <span class="text-2xl font-black text-yellow-500 tracking-tight">LuxeLite</span>
+            <span class="hidden md:inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full">✨ smart lighting</span>
+        </div>
+        <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+            <li><a href="#" class="hover:text-yellow-500 transition">Home</a></li>
+            <li><a href="#" class="text-yellow-500 font-semibold border-b-2 border-yellow-400">Products</a></li>
+            <li><a href="#" class="hover:text-yellow-500 transition">Contact</a></li>
+        </ul>
+        <div class="md:hidden">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero / Header Section -->
+<section class="pt-28 pb-12 bg-gradient-to-r from-yellow-500 to-amber-500 text-white text-center px-4 shadow-lg">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">✨ Our Lighting Collection</h2>
+        <p class="text-lg md:text-xl font-light max-w-2xl mx-auto">Energy-efficient LED solutions & mesmerising ambient lights for modern living.</p>
+    </div>
+</section>
+
+<!-- PRODUCT GRID SECTION -->
+<section class="py-12 px-4 md:px-6">
+    <div class="max-w-7xl mx-auto">
+        <!-- 2/3/4 responsive grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+            <!-- ========================================= -->
+            <!-- PRODUCT 1 : Galaxy Projector               -->
+            <!-- ========================================= -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover flex flex-col transition-fast">
+                <div class="p-3 pb-0">
+                    <div class="flex overflow-x-auto snap-x snap-mandatory gap-2 mb-3 scroll-hide rounded-xl">
+                        <img src="images/galaxy projector-1.jpg" class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" alt="galaxy view 1" onerror="this.src='https://placehold.co/400x300/fef3c7/78350f?text=Galaxy+1'">
+                        <img src="images/galaxy projector-2.jpg" class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" alt="galaxy view 2" onerror="this.src='https://placehold.co/400x300/fef3c7/78350f?text=Galaxy+2'">
+                        <img src="images/galaxy projector-3.jpg" class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" alt="galaxy view 3" onerror="this.src='https://placehold.co/400x300/fef3c7/78350f?text=Galaxy+3'">
+                        <img src="images/galaxy projector-5.jpg" class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" alt="galaxy view 5" onerror="this.src='https://placehold.co/400x300/fef3c7/78350f?text=Galaxy+5'">
+                        <video class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" controls muted preload="none">
+                            <source src="videos/galaxy projector-7.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="p-4 pt-1 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg text-gray-800">Galaxy projector</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">🌌 Nebula & starry ambiance</p>
+                    <p class="text-yellow-500 font-bold text-xl mt-2">ksh 2,699</p>
+                    <!-- Two Buttons: Buy Now + Add to Cart -->
+                    <div class="flex gap-2 mt-4">
+                        <button class="btn-buy-now flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-all shadow-sm">Buy Now</button>
+                        <button class="btn-add-cart flex-1 bg-white border-2 border-yellow-400 text-yellow-600 hover:bg-yellow-50 font-semibold py-2.5 rounded-xl text-sm transition-all">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- PRODUCT 2 : Sunset Lamp                    -->
+            <!-- ========================================= -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover flex flex-col">
+                <div class="p-3 pb-0">
+                    <div class="flex overflow-x-auto snap-x gap-2 mb-3 scroll-hide rounded-xl">
+                        <img src="images/sunset-1.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/ffedd5/7c2d12?text=Sunset+1'">
+                        <img src="images/Sunset-lamp2.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/ffedd5/7c2d12?text=Sunset+2'">
+                        <img src="images/sunset-3.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/ffedd5/7c2d12?text=Sunset+3'">
+                        <img src="images/sunset-4.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/ffedd5/7c2d12?text=Sunset+4'">
+                        <img src="images/sunset-5.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/ffedd5/7c2d12?text=Sunset+5'">
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg">Sunset lamp</h3>
+                    <p class="text-xs text-gray-500">🌅 Gradient horizon glow</p>
+                    <p class="text-yellow-500 font-bold text-xl mt-2">ksh 1,800</p>
+                    <div class="flex gap-2 mt-4">
+                        <button class="btn-buy-now flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-all">Buy Now</button>
+                        <button class="btn-add-cart flex-1 bg-white border-2 border-yellow-400 text-yellow-600 hover:bg-yellow-50 font-semibold py-2.5 rounded-xl text-sm transition-all">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- PRODUCT 3 : Smart LED Strip                -->
+            <!-- ========================================= -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover flex flex-col">
+                <div class="p-3 pb-0">
+                    <div class="flex overflow-x-auto snap-x gap-2 mb-3 scroll-hide rounded-xl">
+                        <img src="images/smartled-1.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=LED+1'">
+                        <img src="images/smartled-2.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=LED+2'">
+                        <img src="images/smartled-3.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=LED+3'">
+                        <img src="images/smartled-4.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=LED+4'">
+                        <img src="images/smartled-5.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=LED+5'">
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg">Smart LED Strip</h3>
+                    <p class="text-xs text-gray-500">🎛️ App-controlled RGBIC</p>
+                    <p class="text-yellow-500 font-bold text-xl mt-2">ksh 1,699</p>
+                    <div class="flex gap-2 mt-4">
+                        <button class="btn-buy-now flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-xl text-sm">Buy Now</button>
+                        <button class="btn-add-cart flex-1 bg-white border-2 border-yellow-400 text-yellow-600 hover:bg-yellow-50 font-semibold py-2.5 rounded-xl text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- PRODUCT 4 : Vines (Fairy lights)           -->
+            <!-- ========================================= -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover flex flex-col">
+                <div class="p-3 pb-0">
+                    <div class="flex overflow-x-auto snap-x gap-2 mb-3 scroll-hide rounded-xl">
+                        <img src="images/vines.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/d1fae5/064e3b?text=Vines+1'">
+                        <img src="https://via.placeholder.com/250/333333" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/bbf7d0/14532d?text=Vine+glow'">
+                        <img src="https://via.placeholder.com/250/cccccc" class="w-full h-36 object-cover rounded-lg flex-shrink-0">
+                        <img src="https://via.placeholder.com/250/ff00cc" class="w-full h-36 object-cover rounded-lg flex-shrink-0">
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg">Vines 🌿</h3>
+                    <p class="text-xs text-gray-500">Waterproof fairy LEDs</p>
+                    <p class="text-yellow-500 font-bold text-xl mt-2">ksh 99<span class="text-sm">/per strand</span></p>
+                    <div class="flex gap-2 mt-4">
+                        <button class="btn-buy-now flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-xl text-sm">Buy Now</button>
+                        <button class="btn-add-cart flex-1 bg-white border-2 border-yellow-400 text-yellow-600 hover:bg-yellow-50 font-semibold py-2.5 rounded-xl text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- PRODUCT 5 : Neon Rope Light                -->
+            <!-- ========================================= -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover flex flex-col">
+                <div class="p-3 pb-0">
+                    <div class="flex overflow-x-auto gap-2 mb-3 scroll-hide rounded-xl">
+                        <img src="https://via.placeholder.com/250/ffaa00" class="w-full h-36 object-cover rounded-lg flex-shrink-0" alt="neon rope">
+                        <img src="https://via.placeholder.com/250/222222" class="w-full h-36 object-cover rounded-lg flex-shrink-0">
+                        <img src="https://via.placeholder.com/250/999999" class="w-full h-36 object-cover rounded-lg flex-shrink-0">
+                        <img src="https://via.placeholder.com/250/00ccff" class="w-full h-36 object-cover rounded-lg flex-shrink-0">
+                        <img src="https://via.placeholder.com/250/ff0099" class="w-full h-36 object-cover rounded-lg flex-shrink-0">
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg">Neon rope</h3>
+                    <p class="text-xs text-gray-500">💡 Bendable & dimmable</p>
+                    <p class="text-yellow-500 font-bold text-xl mt-2">ksh 2,100</p>
+                    <div class="flex gap-2 mt-4">
+                        <button class="btn-buy-now flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-xl text-sm">Buy Now</button>
+                        <button class="btn-add-cart flex-1 bg-white border-2 border-yellow-400 text-yellow-600 hover:bg-yellow-50 font-semibold py-2.5 rounded-xl text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- PRODUCT 6 : Astronaut Projector            -->
+            <!-- ========================================= -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover flex flex-col">
+                <div class="p-3 pb-0">
+                    <div class="flex overflow-x-auto snap-x gap-2 mb-3 scroll-hide rounded-xl">
+                        <img src="images/astronaut-1.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/f3e8ff/4c1d95?text=Astro+image'">
+                        <video class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" controls muted preload="none">
+                            <source src="videos/astronaut-1.mp4" type="video/mp4">
+                        </video>
+                        <video class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" controls muted preload="none">
+                            <source src="videos/astronaut-4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg">Astronaut 👨‍🚀</h3>
+                    <p class="text-xs text-gray-500">Rotating nebula light</p>
+                    <p class="text-yellow-500 font-bold text-xl mt-2">ksh 2,999</p>
+                    <div class="flex gap-2 mt-4">
+                        <button class="btn-buy-now flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-xl text-sm">Buy Now</button>
+                        <button class="btn-add-cart flex-1 bg-white border-2 border-yellow-400 text-yellow-600 hover:bg-yellow-50 font-semibold py-2.5 rounded-xl text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- PRODUCT 7 : Vinyl Record Light             -->
+            <!-- ========================================= -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover flex flex-col">
+                <div class="p-3 pb-0">
+                    <div class="flex overflow-x-auto snap-x snap-mandatory gap-2 mb-3 scroll-hide rounded-xl">
+                        <img src="images/vinly-0.jpg" class="w-full h-36 object-cover rounded-lg flex-shrink-0" onerror="this.src='https://placehold.co/400x300/fef9c3/713f12?text=Vinyl+photo'">
+                        <video class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" controls muted preload="none">
+                            <source src="videos/vinly-1.mp4" type="video/mp4">
+                        </video>
+                        <video class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" controls muted preload="none">
+                            <source src="videos/vinly-2.mp4" type="video/mp4">
+                        </video>
+                        <video class="w-full h-36 object-cover rounded-lg snap-start flex-shrink-0" controls muted preload="none">
+                            <source src="video9.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg">Vinyl Record Lamp</h3>
+                    <p class="text-xs text-gray-500">🎵 Retro acoustic vibe</p>
+                    <p class="text-yellow-500 font-bold text-xl mt-2">ksh 3,600</p>
+                    <div class="flex gap-2 mt-4">
+                        <button class="btn-buy-now flex-1 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2.5 rounded-xl text-sm">Buy Now</button>
+                        <button class="btn-add-cart flex-1 bg-white border-2 border-yellow-400 text-yellow-600 hover:bg-yellow-50 font-semibold py-2.5 rounded-xl text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end grid -->
+        
+        <!-- decorative message -->
+        <div class="text-center mt-12 text-gray-500 text-sm border-t pt-8">
+            💡 Free delivery on orders above Ksh 5,000 | 1-year warranty on all LED products
+        </div>
+    </div>
+</section>
+
+<!-- Interactive JavaScript for Buy Now & Add to Cart with elegant alerts -->
+<script>
+    (function() {
+        // Helper: get product name and price from the product card container
+        function getProductDetails(buttonElement) {
+            const productCard = buttonElement.closest('.bg-white.rounded-2xl');
+            if (!productCard) return { name: 'Product', price: '' };
+            const nameElement = productCard.querySelector('h3');
+            const priceElement = productCard.querySelector('.text-yellow-500.font-bold');
+            const productName = nameElement ? nameElement.innerText.trim() : 'Selected Item';
+            let priceText = priceElement ? priceElement.innerText.trim() : '';
+            return { name: productName, price: priceText };
+        }
+
+        // Attach event listeners to all "Buy Now" buttons
+        const buyNowButtons = document.querySelectorAll('.btn-buy-now');
+        buyNowButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const { name, price } = getProductDetails(btn);
+                // immersive feedback
+                alert(`🚀 BUY NOW initiated!\n\nProduct: ${name}\nPrice: ${price}\n\nYou will be redirected to secure checkout.`);   
+                // In a real implementation, you'd redirect to payment/checkout page
+                // Example: window.location.href = `/checkout?product=${encodeURIComponent(name)}`;
+            });
+        });
+
+        // Attach event listeners to all "Add to Cart" buttons
+        const addCartButtons = document.querySelectorAll('.btn-add-cart');
+        addCartButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const { name, price } = getProductDetails(btn);
+                // dynamic cart simulation
+                alert(`🛒 ADDED TO CART 🛒\n\n${name}\n${price}\n\nItem has been added to your shopping cart.`);
+                // Optional: you could update a mini cart here
+            });
+        });
+
+        // Tiny fallback: if any image is broken, replace with elegant placeholder
+        const allImages = document.querySelectorAll('img');
+        allImages.forEach(img => {
+            img.addEventListener('error', function() {
+                if (!this.dataset.fallbackSet) {
+                    this.src = 'https://placehold.co/500x400/fef9c3/92400e?text=LuxeLite+Light';
+                    this.dataset.fallbackSet = 'true';
+                }
+            });
+        });
+    })();
+</script>
+
+<!-- optional inline style for better hover touch -->
+<style>
+    button:active {
+        transform: scale(0.97);
+    }
+    .card-hover {
+        transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
+    }
+    .rounded-2xl {
+        border-radius: 1.25rem;
+    }
+    .btn-buy-now, .btn-add-cart {
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+    }
+    .scroll-hide {
+        scroll-behavior: smooth;
+        cursor: grab;
+    }
+    .scroll-hide:active {
+        cursor: grabbing;
+    }
+    /* responsive touch improvements */
+    @media (max-width: 640px) {
+        .btn-buy-now, .btn-add-cart {
+            font-size: 0.75rem;
+            padding-top: 0.65rem;
+            padding-bottom: 0.65rem;
+        }
+    }
+</style>
+</body>
+</html>
