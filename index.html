@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LuxeLite | Premium LED Lighting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow-sm fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <h1 class="text-xl sm:text-2xl font-bold text-yellow-500">LuxeLite</h1>
+
+        <!-- Mobile button -->
+        <button id="mobile-menu-button" class="md:hidden text-2xl">
+            ☰
+        </button>
+
+        <!-- Desktop menu -->
+        <ul class="hidden md:flex space-x-6 font-medium text-sm lg:text-base">
+            <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+            <li><a href="#products" class="hover:text-yellow-500">Products</a></li>
+            <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden px-4 pb-4 bg-white border-t">
+        <ul class="space-y-4 text-center font-medium text-lg">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-28 pb-12 px-4 text-center bg-gradient-to-r from-yellow-500 to-yellow-400 text-white">
+    <h2 class="text-2xl sm:text-4xl font-bold mb-4 leading-tight">
+        Brighten Your Space with Premium LED Lighting
+    </h2>
+    <p class="text-sm sm:text-lg mb-6">
+        Affordable, energy-saving lighting for homes and businesses.
+    </p>
+    <a href="#products"
+       class="bg-white text-yellow-500 px-6 py-3 rounded-full font-semibold text-sm sm:text-base inline-block w-full sm:w-auto">
+        Shop Now
+    </a>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="py-12 px-4">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">
+        Featured Products
+    </h2>
+
+    <!-- Better responsive grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+        <!-- PRODUCT -->
+        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
+            <img src="images/Sunset-lamp2.jpg"
+                 class="w-full h-48 object-cover rounded-lg mb-4">
+
+            <h3 class="text-lg font-semibold">Sunset lamp</h3>
+            <p class="text-gray-500 text-sm mb-2">Perfect for home lighting.</p>
+
+            <p class="text-yellow-500 font-bold text-lg mb-4">KES 1,800</p>
+
+            <button onclick="addToCartAndGo('Sunsetlamp', 1800)"
+                class="mt-auto bg-yellow-500 text-white py-3 rounded-full text-sm font-semibold hover:bg-yellow-600">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- PRODUCT -->
+        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
+            <img src="images/Galaxy projector-3.jpg" 
+                 class="w-full h-48 object-cover rounded-lg mb-4">
+
+            <h3 class="text-lg font-semibold">Galaxy projector</h3>
+            <p class="text-gray-500 text-sm mb-2">Modern ceiling lighting.</p>
+
+            <p class="text-yellow-500 font-bold text-lg mb-4">KES 2,699</p>
+
+            <button onclick="addToCartAndGo('Galaxy projector', 2699)"
+                class="mt-auto bg-yellow-500 text-white py-3 rounded-full text-sm font-semibold hover:bg-yellow-600">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- PRODUCT -->
+        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
+            <img src="images/smart led strip.jpg"
+                 class="w-full h-48 object-cover rounded-lg mb-4">
+
+            <h3 class="text-lg font-semibold">smart led strip 5m</h3>
+            <p class="text-gray-500 text-sm mb-2">Outdoor security lighting.</p>
+
+            <p class="text-yellow-500 font-bold text-lg mb-4">KES 1,699</p>
+
+           <button onclick="addToCartAndGo('smart led strip 5m', 1699)"
+    class="mt-auto bg-yellow-500 text-white py-3 rounded-full text-sm font-semibold hover:bg-yellow-600">
+    Add to Cart
+</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-gray-900 text-white text-center py-12 px-4">
+    <h2 class="text-xl sm:text-3xl font-bold mb-3">
+        Upgrade to Smart Lighting
+    </h2>
+    <p class="text-gray-300 text-sm sm:text-base mb-5">
+        Save energy and brighten your home today.
+    </p>
+    <a href="products.html"
+   class="bg-yellow-500 px-6 py-3 rounded-full font-semibold text-sm sm:text-base w-full sm:w-auto inline-block">
+   Explore Products
+</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-12 text-center bg-white px-4">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <p class="text-sm">📍 Nairobi, Kenya</p>
+    <p class="text-sm">📞 +254 740 936618</p>
+    <p class="text-sm">💬 Available for inquiries</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-800 text-gray-400 text-center py-6 text-sm">
+    <p class="text-white font-semibold">LuxeLite</p>
+    <p>© 2026 All rights reserved</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    function addToCart(product, price) {
+        alert(product + " added to cart (KES " + price + ")");
+    }
+</script>
+<script>
+function addToCartAndGo(name, price) {
+    // Get existing cart
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Add new item
+    cart.push({ name: name, price: price, quantity: 1 });
+
+    // Save back to localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Redirect to cart page
+    window.location.href = "cart.html";
+}
+</script>
+
+</body>
+</html>
